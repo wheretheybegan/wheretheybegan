@@ -1,16 +1,38 @@
-## Hi there 👋
+# Where They Began Website Funnel
 
-<!--
-**wheretheybegan/wheretheybegan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This repository contains a production-ready, static one-page marketing site for **Where They Began**.
 
-Here are some ideas to get you started:
+Purpose:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- Send visitors to the official YouTube channel: https://www.youtube.com/@wheretheybegan
+- Encourage subscriptions and viewing directly on YouTube
+- Keep the page fast, simple, and deployable without a backend
+
+## Local preview
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+2. Build the static output:
+
+   ```bash
+   npm run build
+   ```
+
+3. Preview the built site:
+
+   ```bash
+   npm run preview
+   ```
+
+   Then open http://localhost:4173
+
+## Hosting
+
+- **AWS Amplify Hosting**: `amplify.yml` is included and publishes the `dist` folder.
+- **S3 + CloudFront**: run `npm run build` and upload the contents of `dist/` as static assets.
+
+No authentication, database, or backend services are required.
