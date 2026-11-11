@@ -7,6 +7,10 @@ frontend:
     build:
       commands:
         - npm run build
+        - test -f dist/index.html
+        - test -f dist/robots.txt
+        - test -f dist/sitemap.xml
+        - test -f dist/18e9d492f3915e560d3b4261a7d72edb.txt
   artifacts:
     baseDirectory: dist
     files:
