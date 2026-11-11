@@ -4,7 +4,7 @@
   "private": true,
   "description": "Static one-page subscribe funnel for Where They Began.",
   "scripts": {
-    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css dist/",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css robots.txt sitemap.xml 18e9d492f3915e560d3b4261a7d72edb.txt dist/",
     "preview": "python3 -m http.server 4173 --directory dist",
     "serve": "python3 -m http.server 4173"
   }

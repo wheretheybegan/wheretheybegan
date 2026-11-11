@@ -26,10 +26,33 @@ body {
   line-height: 1.5;
 }
 
+.site-header {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1.15rem 1.2rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.15rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-underline-offset: 0.2em;
+}
+
+.social-links a:hover {
+  color: var(--focus);
+}
+
 .page {
   max-width: 980px;
   margin: 0 auto;
-  padding: 2rem 1.2rem 3rem;
+  padding: 1.4rem 1.2rem 3rem;
 }
 
 .hero {
@@ -234,6 +257,7 @@ body {
 }
 
 .btn:focus-visible,
+.site-header a:focus-visible,
 .site-footer a:focus-visible,
 .film-list a:focus-visible {
   outline: 2px solid var(--focus);
@@ -265,6 +289,8 @@ body {
   padding: 0 1.2rem 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   color: #d6d6d6;
 }
